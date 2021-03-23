@@ -393,6 +393,11 @@ margin-bottom: 30px;
   margin-bottom: 0;
 }
 
+/* картинка на всю ширину блока */
+.list-item-portfolio .link img{
+  width: 100%;
+}
+
 
 
 
