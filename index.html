@@ -25,8 +25,9 @@
 <body>
     <header class="bg-color-header header">
         <div class="container ">
-        <a class="logo-link logo-style logo" href="./"><span class="logocolor">Web</span>Studia</a>
+        
         <nav class="up-menue-style">
+            <a class="logo-link logo-style logo" href="./"><span class="logocolor">Web</span>Studia</a>
             <ul class="list site-nav">
                 <li class="li-header">
                     <a class="current link" href="./index.html">Студия</a>
@@ -34,7 +35,7 @@
                 <li class="li-header">
                     <a class="link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="li-header">
+                <li >
                     <a class="link" href="contacs.html">Контакты</a>
                 </li>
             </ul>
@@ -43,7 +44,7 @@
             <li class="li-header">    
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a> 
             </li>
-            <li class="li-header">    
+            <li>    
                 <a class="link" href="tel:+380961111111">+380961111111</a>
             </li>
         </ul>
@@ -54,7 +55,7 @@
     <!--Основа-->
     <main class="main-bg">
         
-        <section class="bg-color-up section">
+        <section class="bg-color-up "> <!--класс section не нужен-->
         <div class="container ">
             <h1 class="h1-style">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button class="button button-index">Заказать услугу</button>
@@ -64,15 +65,15 @@
             <div class="container ">
                 <h2 class="visually-hidden">Наши особенности</h2>
                 <ul class="list index-list">
-                    <li class="our-list">
+                    <li class="our-list our-margin">
                         <h3 class="h3-style">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p class="p-style-up">Идейные соображения,а также началоповседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="our-list">
+                    <li class="our-list our-margin">
                         <h3 class="h3-style">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="p-style-up">Задача организации,в особенности же рамки и место обучения кадров влечёт за собой.</p>
                     </li>
-                    <li class="our-list">
+                    <li class="our-list our-margin">
                         <h3 class="h3-style">ПЛАНИРОВАНИЕ</h3>
                         <p class="p-style-up">Равным образом консультация с широким активом в значительной степениобусловливает.</p>
                     </li>
@@ -94,7 +95,7 @@
                     <li class="li">
                         <img src="./images/img-6.jpg" alt="настройка мобильного гаджета через ноутбук" width="370" />
                     </li>
-                    <li class="li">
+                    <li>
                         <img src="./images/img-5.jpg" alt="выбор цвета на экране планшета" width="370" />
                     </li>
                 </ul>
@@ -102,27 +103,35 @@
         </section>
         <section class="bg-color-team section">
             <div class="container ">
-                <h2 class="h2-style">Наша команда</h2>
+                <h2 class=" our-team-margin h2-style">Наша команда</h2>
                     <ul class="list list-team"> <!--Список в виде точки, <ol> - список с цифрами-->
-                        <li class="block-style-index">
+                        <li class="block-style-index block-style-index-margin">
                             <img src="./images/img-3.jpg" alt="Игорь Демьяненко Product Designer" width="270" /> <!--Ссылка на картинку, подпись и её размер-->
+                        <div>
                             <h3 class="h2-style-team">Игорь Демьяненко</h3>
                             <p class="p-style">Product Designer</p>
+                        </div>
                         </li>
-                        <li class="block-style-index">
+                        <li class="block-style-index block-style-index-margin">
                             <img src="./images/img-2.jpg" alt="Ольга Репина Frontend Developer" width="270" />
+                        <div>
                             <h3 class="h2-style-team">Ольга Репина</h3>
                             <p class="p-style">Frontend Developer</p>
+                        </div>
                         </li>
-                        <li class="block-style-index">
+                        <li class="block-style-index block-style-index-margin">
                             <img src="./images/img-1.jpg" alt="Николай Тарасов Marketing" width="270" />
+                        <div>
                             <h3 class="h2-style-team">Николай Тарасов</h3>
                             <p class="p-style">Marketing</p>
+                        </div>
                         </li>
                         <li class="block-style-index">
                             <img src="./images/img.jpg" alt="Михаил Ермаков UI Designer" width="270" />
+                        <div>
                             <h3 class="h2-style-team">Михаил Ермаков</h3>
                             <p class="p-style">UI Designer</p>
+                        </div>
                         </li>
                     </ul>
             </div>
@@ -140,7 +149,7 @@
                         <a class="link link-map" href="https://goo.gl/maps/oVkc9rPg9sfFg3QS6" target="_blank" 
                         rel="noopener norefener">г. Киев, пр-т Леси Украинки, 26 <!--адрес--></a>
                     </li>
-                    <li>
+                    <li class="li-footer">
                         <a class="link down-menue-contact-style" href="mailto:info@devstudio.com">info@devstudio.com</a> <!--Активный имэйл-->
                     </li>
                     <li>

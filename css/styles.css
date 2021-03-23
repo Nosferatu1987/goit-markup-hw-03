@@ -44,6 +44,10 @@
   background-color: var(--main-text-color-white);
 }
 
+.main-bg-portfolio {
+  background-color: var(--main-text-color-white);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -119,7 +123,7 @@ ul
 }
 
 .header {
-  border-bottom: 1px solid var(--main-text-color-gray);
+  border-bottom: 1px solid var(--bg-color-gray);
 /* или */
 /* border-width: 1px;
 border-style: solid;
@@ -148,13 +152,18 @@ align-items: center;
 
 /* отступ для студии,портфолио и контактов */
 .up-menue-style .site-nav {
-  margin-right: 331px;
+  /* margin-right: 331px; */
   margin-left: 93px;
 }
 
 /* отступы внутри site-nav */
-.li-header .link {
+.site-nav .li-header,
+.up-phone-email-style .li-header {
   margin-right: 50px;
+}
+
+.container .up-phone-email-style {
+  margin-left: auto;
 }
 
 
@@ -197,18 +206,24 @@ margin-bottom: 30px;
 /* Размер класа our-list и расстояния между ними */
 .our-list {
   width: 270px;
-  height: 101px;
+  /* height: 101px; */
+  
+}
+
+.index-list .our-margin{
   margin-right: 30px;
 }
 
 /* промежуток между заголовком и подписью */
 .our-list .h3-style{
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .container .h2-style-what-we-do {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .what-are-we-do.section{
@@ -226,8 +241,14 @@ margin-bottom: 30px;
   border-color: var(--main-text-color-gray); */
 }
 
+/* Расстояние между блоками */
 .list-work .li{
   margin-right: 30px;
+}
+
+/* превращаем картинку в блок */
+.list-work li img{
+  display: block;
 }
 
 /* Положение Наших особенностей */
@@ -241,20 +262,28 @@ margin-bottom: 30px;
   border-color: var(--main-text-color-gray); */
 }
 
-.list-team .block-style-index {
+.list-team .block-style-index-margin {
   margin-right: 30px;
 }
 
-.block-style-index .h2-style-team,
-.block-style-index .p-style {
+.block-style-index div .h2-style-team,
+.block-style-index div .p-style {
   text-align: center;
 }
 
-.block-style-index .h2-style-team {
+.block-style-index div .h2-style-team {
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
-.block-style-index .p-style {
+.block-style-index div .p-style {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+
+.block-style-index img {
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -281,23 +310,34 @@ margin-bottom: 30px;
 
 /* Страница Портфолио */
 /* main */
-.main-bg .container .section .port-menu{
+.main-bg-portfolio .section .container .port-menu{
   display: flex;
   justify-content:center;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   /* padding-top: 32px;
   padding-bottom: 32px; */
   /* border-bottom: 30;
   border-color: var(--main-text-color-gray); */
 }
 
+/* размер кнопок port-menu */
 .port-menu .link {
   padding: 6px 22px;
+  
+}
+
+/* Отступ между кнопками port-menu */
+.port-menu-button-margin {
   margin-right: 8px;
 }
 
-.main-bg .container .section .list{
+/* display: block for img port-menu */
+.list-item-portfolio img {
+  display: block;
+}
+
+.main-bg-portfolio .section .container .list{
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -308,6 +348,7 @@ margin-bottom: 30px;
 
 .list-text-portfolio {
   padding: 20px 24px;
+  border: 1px solid var(--border-color)
 }
 
 .list-item-portfolio {
@@ -320,6 +361,37 @@ margin-bottom: 30px;
 }
 
 
+/* Увеличение области кликабельности ссылки */
+/* .up-menue-style .logo-link, */
+.site-nav .link,
+.nav-contacts li .link {
+  padding: 30px 0;
+}
+
+
+/* Отступ для Нашей команды */
+.container .our-team-margin{
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* отступы между списками в футере */
+.down-menue-address-style .list .li-footer .link {
+  margin-bottom: 6px;
+  margin-top: 9px;
+}
+
+.list-text-portfolio .portfolio-h3-style {
+  margin: 0;
+}
+
+.list-text-portfolio .portfolio-p-style {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
 
 
 
@@ -486,6 +558,7 @@ color: var(--main-text-color-white);
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--main-text-color-gray);
+  margin: 0;
 }
 
 
@@ -515,6 +588,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--main-text-color-black);
+
 }
 
 /* Стиль для cтилизации описания фото в портфолио */
@@ -572,6 +646,8 @@ color: var(--main-text-color-gray);
 
 .button-index {
   background-color: var(--main-text-color-blue);
+  border: none;
+  border-radius: 4px;
 }
 
 /* изменение цвета кнопки при наведении */
@@ -607,7 +683,7 @@ cursor: pointer;
 }
 
 .portfolio-buttom.secondary {
-  background-color: var(--main-text-color-white);
+  background-color: var(--bg-color-team);
   color: var(--main-text-color-black);
   border-color: var(--main-text-color-white);
 }
@@ -627,7 +703,7 @@ cursor: pointer;
 /* height: 600px; */
 /* left: 0px; */
 /* top: 80px; */
-background: var(--main-text-color-gray);
+background: var(--bg-color-gray);
 }
 
 .bg-color-team {
@@ -662,7 +738,7 @@ box-sizing: border-box;
 .block-style-index {
   /* position: absolute; */
   width: 270px;
-  height: 368px;
+  /* height: 368px; */
   /* left: 215px;
   top: 1635px; */
   background: var(--main-text-color-white);

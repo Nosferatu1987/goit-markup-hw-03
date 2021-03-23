@@ -25,8 +25,9 @@
 <body>
     <header class="bg-color-header header">
         <div class="container ">
-        <a class="logo-link logo-style logo" href="./"><span class="logocolor">Web</span>Studia</a>
+        
         <nav class="up-menue-style">
+            <a class="logo-link logo-style logo" href="./"><span class="logocolor">Web</span>Studia</a>
             <ul class="list site-nav">
                 <li class="li-header">
                     <a class="link" href="./index.html">Студия</a>
@@ -34,7 +35,7 @@
                 <li class="li-header">
                     <a class="current link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="li-header">
+                <li >
                     <a class="link" href="contacs.html">Контакты</a>
                 </li>
             </ul>
@@ -43,22 +44,22 @@
             <li class="li-header">    
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a> 
             </li>
-            <li class="li-header">    
+            <li>    
                 <a class="link" href="tel:+380961111111">+380961111111</a>
             </li>
         </ul>
         </div>
     </header>
 
-    <main class="main-bg"> 
-    <div class="container "> 
-        <section  class="section">
+    <main class="main-bg-portfolio"> 
+    <section  class="section">
+        <div class="container "> 
             <h1 class="visually-hidden">Наше порфолио</h1>
             <ul class="list port-menu">
-                <li><button type="button" class="portfolio-buttom link primary">Все</button></li>
-                <li><button type="button" class="portfolio-buttom link secondary">Веб-сайты</button></li>
-                <li><button type="button" class="portfolio-buttom link secondary">Приложения</button ></li>
-                <li><button type="button" class="portfolio-buttom link secondary">Дизайн</button ></li>
+                <li class="port-menu-button-margin"><button type="button" class="portfolio-buttom link secondary">Все</button></li>
+                <li class="port-menu-button-margin"><button type="button" class="portfolio-buttom link secondary">Веб-сайты</button></li>
+                <li class="port-menu-button-margin"><button type="button" class="portfolio-buttom link secondary">Приложения</button ></li>
+                <li class="port-menu-button-margin"><button type="button" class="portfolio-buttom link secondary">Дизайн</button ></li>
                 <li><button type="button" class="portfolio-buttom link secondary">Маркетинг</button ></li>
             </ul>
             <h2 class="visually-hidden">Наши работы</h2>
@@ -145,25 +146,28 @@
                     </div>
                     </a>
                 </li>
-            </ul>
-        </section>
+            </ul>    
     </div>
+    </section>
     </main>
 
     <footer class="footer-text-color bg-color-footer">
-    <div class="container ">
-        <a class="logo-link logo-style logo-margin" href="./"><span class="logocolor">Web</span>Studio</a> <!--ссылка на главную страницу "./" обозначает корневую папку и отправляет на главную страницу-->
-        <address class="down-menue-address-style"><!--адрес-->
-            г. Киев, пр-т Леси Украинки, 26 <!--адрес-->
-            <ul class="list down-menue-contact-style">
-                <li>
-                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a> <!--Активный имэйл-->
-                </li>
-                <li>
-                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a> <!--Активный телефон-->
-                </li>
-            </ul>
-        </address>
-    </div>
+        <div class="container ">
+            <a class="logo-link logo-style logo-margin" href="./"><span class="logocolor">Web</span>Studio</a> <!--ссылка на главную страницу "./" обозначает корневую папку и отправляет на главную страницу-->
+            <address class="down-menue-address-style"><!--адрес-->
+                <ul class="list ">
+                    <li>
+                        <a class="link link-map" href="https://goo.gl/maps/oVkc9rPg9sfFg3QS6" target="_blank" 
+                        rel="noopener norefener">г. Киев, пр-т Леси Украинки, 26 <!--адрес--></a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="link down-menue-contact-style" href="mailto:info@devstudio.com">info@devstudio.com</a> <!--Активный имэйл-->
+                    </li>
+                    <li>
+                        <a class="link down-menue-contact-style" href="tel:+380961111111">+38 096 111 11 11</a> <!--Активный телефон-->
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
