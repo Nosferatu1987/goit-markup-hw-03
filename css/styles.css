@@ -385,9 +385,17 @@ margin-bottom: 30px;
 }
 
 /* отступы между списками в футере */
-.down-menue-address-style .list .li-footer {
+.down-menue-address-style .list .li-footer-first {
   margin-bottom: 6px;
-  margin-top: 9px;
+  /* margin-top: 9px; */
+  /* padding-bottom: 6px;
+  padding-top: 9px; */
+
+}
+
+.down-menue-address-style .list .li-footer-second {
+  margin-bottom: 9px;
+  /* margin-top: 9px; */
   /* padding-bottom: 6px;
   padding-top: 9px; */
 
